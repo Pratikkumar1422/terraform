@@ -29,7 +29,7 @@ resource "aws_security_group" "sample" {
         from_port = 22
         to_port = 22
         protocol = "tcp"
-        cidr_blocks = ["${aws_eip.eip-add.public_ip}/32"]
+        cidr_blocks = ["0.0.0.0/32"]
         
     }
 }
