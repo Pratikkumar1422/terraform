@@ -11,10 +11,10 @@ resource "aws_instance" "my-ec2" {
     instance_type = var.instance-type
     key_name = "apple"
     vpc_security_group_ids = ["${aws_security_group.sample.id}"]
-    count = 2
-    tags = {
-      Name = var.name[count.index]
-    }
+    #count = 2
+    #tags = {
+     # Name = var.name[count.index]
+    #}
 }
 variable "name" {
   type = list(any)
