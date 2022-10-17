@@ -18,7 +18,7 @@ resource "aws_instance" "my-ec2" {
 }
 variable "name" {
   type = list(any)
-  default = ["dev","test" ]
+  default = ["dev","testttttt" ]
 }
 output "instance-publicip" {
   value = aws_instance.my-ec2[0].public_ip
